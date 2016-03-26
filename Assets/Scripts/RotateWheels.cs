@@ -35,10 +35,10 @@ public class RotateWheels : MonoBehaviour {
 				}
 				if(child.name == "Gear_5"){
 					if (Input.GetKey(KeyCode.W)){
-						child.Rotate(Vector3.forward * speed * Time.deltaTime);
+						child.Rotate(Vector3.forward * -speed * Time.deltaTime);
 					}
 					if (Input.GetKey(KeyCode.S)){
-						child.Rotate(Vector3.forward * -speed * Time.deltaTime);
+						child.Rotate(Vector3.forward * speed * Time.deltaTime);
 					}
 				}
 			}
