@@ -40,5 +40,5 @@ iOSTestWithAuto/
 # ============ #
 # Files to big #
 # ============ #
-Assets/Medieval Buildings
+*.tif
 Assets/Plugins/iOS/libvrunity.a
