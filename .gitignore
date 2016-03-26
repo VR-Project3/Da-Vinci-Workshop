@@ -29,3 +29,16 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ============ #
+#   iOS Files  #
+# ============ #
+
+iOSTest/
+iOSTestWithAuto/
+
+# ============ #
+# Files to big #
+# ============ #
+Assets/Medieval Buildings
+Assets/Plugins/iOS/libvrunity.a
