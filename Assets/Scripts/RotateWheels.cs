@@ -41,7 +41,7 @@ public class RotateWheels : MonoBehaviour {
 		rotationSpeed = speed * 2;
 
 		foreach(Transform t in transform)
-		{
+		{   
 			foreach(Transform child in t)
 			{
 				if (child.name == "Gear_1" || child.name == "Gear_2" || child.name == "paddle_1" || child.name == "paddle_2"){
