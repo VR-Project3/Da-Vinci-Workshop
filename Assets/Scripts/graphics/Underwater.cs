@@ -9,7 +9,7 @@ public class Underwater : MonoBehaviour {
 	public float m_UnderwaterCheckOffset = 0.001F;	
 	public Color envFogColor;
 	public Color underwaterFogColor = Color.blue;
-	public GameObject underwaterStuff;
+//	public GameObject underwaterStuff;
 	public Material waterBubblesMat;
 	
 	public float skyFogDensity = 0.005f;
@@ -61,7 +61,7 @@ public class Underwater : MonoBehaviour {
 					reflScript.m_BackSide = true;
 					
 					//Enable caustic
-					underwaterStuff.SetActiveRecursively(true);
+//					underwaterStuff.SetActiveRecursively(true);
 					
 					//Enable bubbles
 					waterBubblesMat.SetVector("_TintColor", mUnderWaterBubblesColor );													
@@ -91,7 +91,7 @@ public class Underwater : MonoBehaviour {
 					reflScript.m_BackSide = false;
 					
 					//Disable caustic
-					underwaterStuff.SetActiveRecursively(false);
+//					underwaterStuff.SetActiveRecursively(false);
 					
 					//Disable bubbles				
 					waterBubblesMat.SetVector("_TintColor", mUpWaterBubblesColor );
