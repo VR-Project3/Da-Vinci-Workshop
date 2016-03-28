@@ -27,11 +27,14 @@ public class RotateWheels : MonoBehaviour {
 			speed += -1 * speed * slowDown;
 		}
 
-		if (Input.GetKey(KeyCode.W)) {
-			speed += accel;
-		} else if(Input.GetKey(KeyCode.S)){
-			speed -= accel;
-		}
+//		if (Input.GetKey(KeyCode.W)) {
+//			speed += accel;
+//		} else if(Input.GetKey(KeyCode.S)){
+//			speed -= accel;
+//		}
+
+		speed += (accel * Input.GetAxis ("Vertical"));
+
 		if (speed > maxSpeed) {
 			speed = maxSpeed;
 		} else if (speed < maxSpeedReverse) {
@@ -41,7 +44,7 @@ public class RotateWheels : MonoBehaviour {
 		rotationSpeed = speed * 2;
 
 		foreach(Transform t in transform)
-		{
+		{   
 			foreach(Transform child in t)
 			{
 				if (child.name == "Gear_1" || child.name == "Gear_2" || child.name == "paddle_1" || child.name == "paddle_2"){
@@ -56,11 +59,13 @@ public class RotateWheels : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKey (KeyCode.A)) {
-			trunSpeed = -2f;
-		} else if (Input.GetKey (KeyCode.D)) {
-			trunSpeed = 2f;
-		}
+//		if (Input.GetKey (KeyCode.A)) {
+//			trunSpeed = -2f;
+//		} else if (Input.GetKey (KeyCode.D)) {
+//			trunSpeed = 2f;
+//		}
+
+		trunSpeed = (2 * Input.GetAxis ("Horizontal"));
 
 		transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
 		transform.Translate(Vector3.forward*speed*Time.deltaTime);
