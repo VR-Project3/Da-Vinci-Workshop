@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: 0dd5601bda8b24a469453d423e4f8ca8
+timeCreated: 1459209977
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f00000090000000910000009200000093000000940000009500000096000000970000009800000099000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 6b156385012d206f3e680edb6489df98
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 7.3073926, y: 8.168104, z: 15.292035}
+      lookAt: {x: 3.9441743, y: 0.098859206, z: 2.6661859}
+      up: {x: -0.13524973, y: 0.85082716, z: -0.5077408}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armored roof
+    100002: Cannon
+    100004: Cannon 1
+    100006: Cannon 10
+    100008: Cannon 11
+    100010: Cannon 12
+    100012: Cannon 13
+    100014: Cannon 14
+    100016: Cannon 15
+    100018: Cannon 16
+    100020: Cannon 17
+    100022: Cannon 18
+    100024: Cannon 19
+    100026: Cannon 2
+    100028: Cannon 20
+    100030: Cannon 21
+    100032: Cannon 22
+    100034: Cannon 23
+    100036: Cannon 3
+    100038: Cannon 4
+    100040: Cannon 5
+    100042: Cannon 6
+    100044: Cannon 7
+    100046: Cannon 8
+    100048: Cannon 9
+    100050: Crank Stand
+    100052: Crank Stand 1
+    100054: //RootNode
+    100056: Frunt Axial
+    100058: Rear Axial
+    100060: Roof Suport
+    100062: Sspokes
+    100064: Sspokes 1
+    100066: Sspokes 10
+    100068: Sspokes 11
+    100070: Sspokes 12
+    100072: Sspokes 13
+    100074: Sspokes 14
+    100076: Sspokes 15
+    100078: Sspokes 16
+    100080: Sspokes 17
+    100082: Sspokes 18
+    100084: Sspokes 19
+    100086: Sspokes 2
+    100088: Sspokes 20
+    100090: Sspokes 21
+    100092: Sspokes 22
+    100094: Sspokes 23
+    100096: Sspokes 24
+    100098: Sspokes 25
+    100100: Sspokes 26
+    100102: Sspokes 27
+    100104: Sspokes 28
+    100106: Sspokes 29
+    100108: Sspokes 3
+    100110: Sspokes 30
+    100112: Sspokes 31
+    100114: Sspokes 4
+    100116: Sspokes 5
+    100118: Sspokes 6
+    100120: Sspokes 7
+    100122: Sspokes 8
+    100124: Sspokes 9
+    100126: Wheel 1
+    100128: Wheel 1 1
+    100130: Wheel 1 2
+    100132: Wheel 1 3
+    100134: Wheel Crank
+    100136: Wheel Crank 1
+    100138: Wheel Stand
+    100140: Wheel Stand 1
+    100142: Wheel Stand 2
+    100144: Wheel Stand 3
+    100146: Wheel Stand 4
+    100148: Wheel Stand 5
+    100150: Wheel Stand 6
+    100152: Wheel Stand 7
+    400000: Armored roof
+    400002: Cannon
+    400004: Cannon 1
+    400006: Cannon 10
+    400008: Cannon 11
+    400010: Cannon 12
+    400012: Cannon 13
+    400014: Cannon 14
+    400016: Cannon 15
+    400018: Cannon 16
+    400020: Cannon 17
+    400022: Cannon 18
+    400024: Cannon 19
+    400026: Cannon 2
+    400028: Cannon 20
+    400030: Cannon 21
+    400032: Cannon 22
+    400034: Cannon 23
+    400036: Cannon 3
+    400038: Cannon 4
+    400040: Cannon 5
+    400042: Cannon 6
+    400044: Cannon 7
+    400046: Cannon 8
+    400048: Cannon 9
+    400050: Crank Stand
+    400052: Crank Stand 1
+    400054: //RootNode
+    400056: Frunt Axial
+    400058: Rear Axial
+    400060: Roof Suport
+    400062: Sspokes
+    400064: Sspokes 1
+    400066: Sspokes 10
+    400068: Sspokes 11
+    400070: Sspokes 12
+    400072: Sspokes 13
+    400074: Sspokes 14
+    400076: Sspokes 15
+    400078: Sspokes 16
+    400080: Sspokes 17
+    400082: Sspokes 18
+    400084: Sspokes 19
+    400086: Sspokes 2
+    400088: Sspokes 20
+    400090: Sspokes 21
+    400092: Sspokes 22
+    400094: Sspokes 23
+    400096: Sspokes 24
+    400098: Sspokes 25
+    400100: Sspokes 26
+    400102: Sspokes 27
+    400104: Sspokes 28
+    400106: Sspokes 29
+    400108: Sspokes 3
+    400110: Sspokes 30
+    400112: Sspokes 31
+    400114: Sspokes 4
+    400116: Sspokes 5
+    400118: Sspokes 6
+    400120: Sspokes 7
+    400122: Sspokes 8
+    400124: Sspokes 9
+    400126: Wheel 1
+    400128: Wheel 1 1
+    400130: Wheel 1 2
+    400132: Wheel 1 3
+    400134: Wheel Crank
+    400136: Wheel Crank 1
+    400138: Wheel Stand
+    400140: Wheel Stand 1
+    400142: Wheel Stand 2
+    400144: Wheel Stand 3
+    400146: Wheel Stand 4
+    400148: Wheel Stand 5
+    400150: Wheel Stand 6
+    400152: Wheel Stand 7
+    2300000: Armored roof
+    2300002: Cannon
+    2300004: Cannon 1
+    2300006: Cannon 10
+    2300008: Cannon 11
+    2300010: Cannon 12
+    2300012: Cannon 13
+    2300014: Cannon 14
+    2300016: Cannon 15
+    2300018: Cannon 16
+    2300020: Cannon 17
+    2300022: Cannon 18
+    2300024: Cannon 19
+    2300026: Cannon 2
+    2300028: Cannon 20
+    2300030: Cannon 21
+    2300032: Cannon 22
+    2300034: Cannon 23
+    2300036: Cannon 3
+    2300038: Cannon 4
+    2300040: Cannon 5
+    2300042: Cannon 6
+    2300044: Cannon 7
+    2300046: Cannon 8
+    2300048: Cannon 9
+    2300050: Crank Stand
+    2300052: Crank Stand 1
+    2300054: //RootNode
+    2300056: Frunt Axial
+    2300058: Rear Axial
+    2300060: Roof Suport
+    2300062: Sspokes
+    2300064: Sspokes 1
+    2300066: Sspokes 10
+    2300068: Sspokes 11
+    2300070: Sspokes 12
+    2300072: Sspokes 13
+    2300074: Sspokes 14
+    2300076: Sspokes 15
+    2300078: Sspokes 16
+    2300080: Sspokes 17
+    2300082: Sspokes 18
+    2300084: Sspokes 19
+    2300086: Sspokes 2
+    2300088: Sspokes 20
+    2300090: Sspokes 21
+    2300092: Sspokes 22
+    2300094: Sspokes 23
+    2300096: Sspokes 24
+    2300098: Sspokes 25
+    2300100: Sspokes 26
+    2300102: Sspokes 27
+    2300104: Sspokes 28
+    2300106: Sspokes 29
+    2300108: Sspokes 3
+    2300110: Sspokes 30
+    2300112: Sspokes 31
+    2300114: Sspokes 4
+    2300116: Sspokes 5
+    2300118: Sspokes 6
+    2300120: Sspokes 7
+    2300122: Sspokes 8
+    2300124: Sspokes 9
+    2300126: Wheel 1
+    2300128: Wheel 1 1
+    2300130: Wheel 1 2
+    2300132: Wheel 1 3
+    2300134: Wheel Crank
+    2300136: Wheel Crank 1
+    2300138: Wheel Stand
+    2300140: Wheel Stand 1
+    2300142: Wheel Stand 2
+    2300144: Wheel Stand 3
+    2300146: Wheel Stand 4
+    2300148: Wheel Stand 5
+    2300150: Wheel Stand 6
+    2300152: Wheel Stand 7
+    3300000: Armored roof
+    3300002: Cannon
+    3300004: Cannon 1
+    3300006: Cannon 10
+    3300008: Cannon 11
+    3300010: Cannon 12
+    3300012: Cannon 13
+    3300014: Cannon 14
+    3300016: Cannon 15
+    3300018: Cannon 16
+    3300020: Cannon 17
+    3300022: Cannon 18
+    3300024: Cannon 19
+    3300026: Cannon 2
+    3300028: Cannon 20
+    3300030: Cannon 21
+    3300032: Cannon 22
+    3300034: Cannon 23
+    3300036: Cannon 3
+    3300038: Cannon 4
+    3300040: Cannon 5
+    3300042: Cannon 6
+    3300044: Cannon 7
+    3300046: Cannon 8
+    3300048: Cannon 9
+    3300050: Crank Stand
+    3300052: Crank Stand 1
+    3300054: //RootNode
+    3300056: Frunt Axial
+    3300058: Rear Axial
+    3300060: Roof Suport
+    3300062: Sspokes
+    3300064: Sspokes 1
+    3300066: Sspokes 10
+    3300068: Sspokes 11
+    3300070: Sspokes 12
+    3300072: Sspokes 13
+    3300074: Sspokes 14
+    3300076: Sspokes 15
+    3300078: Sspokes 16
+    3300080: Sspokes 17
+    3300082: Sspokes 18
+    3300084: Sspokes 19
+    3300086: Sspokes 2
+    3300088: Sspokes 20
+    3300090: Sspokes 21
+    3300092: Sspokes 22
+    3300094: Sspokes 23
+    3300096: Sspokes 24
+    3300098: Sspokes 25
+    3300100: Sspokes 26
+    3300102: Sspokes 27
+    3300104: Sspokes 28
+    3300106: Sspokes 29
+    3300108: Sspokes 3
+    3300110: Sspokes 30
+    3300112: Sspokes 31
+    3300114: Sspokes 4
+    3300116: Sspokes 5
+    3300118: Sspokes 6
+    3300120: Sspokes 7
+    3300122: Sspokes 8
+    3300124: Sspokes 9
+    3300126: Wheel 1
+    3300128: Wheel 1 1
+    3300130: Wheel 1 2
+    3300132: Wheel 1 3
+    3300134: Wheel Crank
+    3300136: Wheel Crank 1
+    3300138: Wheel Stand
+    3300140: Wheel Stand 1
+    3300142: Wheel Stand 2
+    3300144: Wheel Stand 3
+    3300146: Wheel Stand 4
+    3300148: Wheel Stand 5
+    3300150: Wheel Stand 6
+    3300152: Wheel Stand 7
+    4300000: Mesh Devinci's+War+Machine
+    4300002: Mesh Wheel 1
+    4300004: Mesh Sspokes
+    4300006: Mesh Wheel Crank
+    4300008: Mesh Frunt Axial
+    4300010: Mesh Rear Axial
+    4300012: Mesh Crank Stand
+    4300014: Mesh Wheel Stand
+    4300016: Mesh Wheel Stand
+    4300018: Mesh Cannon
+    4300020: Mesh Armored roof
+    4300022: Mesh Roof Suport
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
