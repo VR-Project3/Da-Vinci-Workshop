@@ -69,9 +69,10 @@ public class RotateWheels : MonoBehaviour {
 
 		trunSpeed = (2 * Input.GetAxis ("Horizontal"));
 
-		rotor.transform.rotation = Quaternion.AngleAxis(180+ (Input.GetAxis ("Horizontal") * -40), Vector3.up);
-
 		transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
+		print (transform.eulerAngles.y);
+//		rotor.transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
+		rotor.transform.rotation = Quaternion.AngleAxis((Input.GetAxis ("Horizontal") * -40) + transform.eulerAngles.y, Vector3.up);
 		transform.Translate(Vector3.forward*speed*Time.deltaTime);
 	}
 }

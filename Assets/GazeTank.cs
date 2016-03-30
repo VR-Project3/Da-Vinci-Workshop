@@ -5,8 +5,8 @@ public class GazeTank : MonoBehaviour {
 
 	bool isAnimating;
 
-//	public Transform projectile;
-//	public float bulletSpeed = 20;
+	//	public Transform projectile;
+	//	public float bulletSpeed = 20;
 
 
 
@@ -162,3 +162,4 @@ public class GazeTank : MonoBehaviour {
 		}
 	}
 }
+
