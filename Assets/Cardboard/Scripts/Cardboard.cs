@@ -61,7 +61,7 @@ public class Cardboard : MonoBehaviour {
     if (sdk == null && UnityEngine.Object.FindObjectOfType<Cardboard>() == null) {
       Debug.Log("Creating Cardboard object");
       var go = new GameObject("Cardboard", typeof(Cardboard));
-//      go.transform.localPosition = Vector3.zero;
+      go.transform.localPosition = Vector3.zero;
       // sdk will be set by Cardboard.Awake().
     }
   }

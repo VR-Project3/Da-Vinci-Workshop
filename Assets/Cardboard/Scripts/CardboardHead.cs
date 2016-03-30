@@ -110,8 +110,9 @@ public class CardboardHead : MonoBehaviour {
       var rot = Cardboard.SDK.HeadPose.Orientation;
       if (target == null) {
         transform.localRotation = rot;
-      } else {
-        transform.rotation = target.rotation * rot;
+      }
+         else {
+                transform.localRotation = rot;
       }
     }
 
@@ -124,8 +125,6 @@ public class CardboardHead : MonoBehaviour {
       }
     }
 
-    if (OnHeadUpdated != null) {
-      OnHeadUpdated(gameObject);
-    }
+    
   }
 }
