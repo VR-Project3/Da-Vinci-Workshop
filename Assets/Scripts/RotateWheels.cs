@@ -11,6 +11,8 @@ public class RotateWheels : MonoBehaviour {
 	float rotationSpeed;
 	public float trunSpeed = 0f;
 
+	public GameObject rotor;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -66,6 +68,8 @@ public class RotateWheels : MonoBehaviour {
 //		}
 
 		trunSpeed = (2 * Input.GetAxis ("Horizontal"));
+
+		rotor.transform.rotation = Quaternion.AngleAxis(180+ (Input.GetAxis ("Horizontal") * -40), Vector3.up);
 
 		transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
 		transform.Translate(Vector3.forward*speed*Time.deltaTime);
