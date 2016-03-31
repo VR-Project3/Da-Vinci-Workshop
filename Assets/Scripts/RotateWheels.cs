@@ -11,13 +11,15 @@ public class RotateWheels : MonoBehaviour {
 	float rotationSpeed;
 	public float trunSpeed = 0f;
 
+	public bool shouldLeave = false;
+
 	public GameObject rotor;
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -29,11 +31,11 @@ public class RotateWheels : MonoBehaviour {
 			speed += -1 * speed * slowDown;
 		}
 
-//		if (Input.GetKey(KeyCode.W)) {
-//			speed += accel;
-//		} else if(Input.GetKey(KeyCode.S)){
-//			speed -= accel;
-//		}
+		//		if (Input.GetKey(KeyCode.W)) {
+		//			speed += accel;
+		//		} else if(Input.GetKey(KeyCode.S)){
+		//			speed -= accel;
+		//		}
 
 		speed += (accel * Input.GetAxis ("Vertical"));
 
@@ -61,18 +63,30 @@ public class RotateWheels : MonoBehaviour {
 			}
 		}
 
-//		if (Input.GetKey (KeyCode.A)) {
-//			trunSpeed = -2f;
-//		} else if (Input.GetKey (KeyCode.D)) {
-//			trunSpeed = 2f;
-//		}
+		//		if (Input.GetKey (KeyCode.A)) {
+		//			trunSpeed = -2f;
+		//		} else if (Input.GetKey (KeyCode.D)) {
+		//			trunSpeed = 2f;
+		//		}
 
 		trunSpeed = (2 * Input.GetAxis ("Horizontal"));
 
 		transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
-		print (transform.eulerAngles.y);
+//		print (transform.eulerAngles.y);
 //		rotor.transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
-		rotor.transform.rotation = Quaternion.AngleAxis((Input.GetAxis ("Horizontal") * -40) + transform.eulerAngles.y, Vector3.up);
+		rotor.transform.rotation = Quaternion.AngleAxis(180 + (Input.GetAxis ("Horizontal") * -40) + transform.eulerAngles.y, Vector3.up);
 		transform.Translate(Vector3.forward*speed*Time.deltaTime);
+
+		if (Input.GetButton ("Fire1") || shouldLeave)
+		{
+			Application.LoadLevel("workshop 1");
+		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		print ("exit");
+		if (other.tag == "Exit") {
+			shouldLeave = true;
+		}
 	}
 }
