@@ -13,6 +13,8 @@ public class RotateWheels : MonoBehaviour {
 
 	public bool shouldLeave = false;
 
+	public AudioSource paddling;
+
 	public GameObject rotor;
 
 	// Use this for initialization
@@ -38,6 +40,8 @@ public class RotateWheels : MonoBehaviour {
 		//		}
 
 		speed += (accel * Input.GetAxis ("Vertical"));
+
+		paddling.volume = 0.5f * (Mathf.Abs(speed) / 5f);
 
 		if (speed > maxSpeed) {
 			speed = maxSpeed;
