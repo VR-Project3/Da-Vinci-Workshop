@@ -9,7 +9,9 @@ public class FlightController : MonoBehaviour
 	float rotationInt = 30f;
 	private bool land = false;
 	private float minSpeed = 100f;
-	private float maxSpeed = 500f;
+	private float maxSpeed = 300f;
+
+	public GameObject horse;
 
 	void Start () 
 	{
@@ -26,6 +28,10 @@ public class FlightController : MonoBehaviour
 		if (other.tag == "ground") {
 			speed = 0f;
 			GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+		}
+
+		if (other.tag == "startHorse") {
+			horse.GetComponent<SplineController>().FollowSpline ();
 		}
 	}
 		
