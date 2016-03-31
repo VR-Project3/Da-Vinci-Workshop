@@ -5,6 +5,7 @@ public class GazePaddleBoat : MonoBehaviour {
 	
 	bool isLooking;
 
+	public GameObject player;
 
 	// Use this for initialization
 	void Start () {
@@ -13,16 +14,18 @@ public class GazePaddleBoat : MonoBehaviour {
 
 	void Update(){
 
-		if(isLooking){
-			if(Input.GetButton("Fire1")){
-				Application.LoadLevel("PaddleBoat");
+		float distance = Vector3.Distance (transform.position, player.transform.position);
+		if (distance < 7.0f) {
+			if (isLooking) {
+				if (Input.GetButton ("AButton") || Input.GetButton ("Fire1")) {
+					Application.LoadLevel ("PaddleBoat");
+				}
 			}
 		}
 	}
 
 	// Update is called once per frame
 	public void startStareAtPaddleBoatPaper() {
-
 		isLooking = true;
 	}
 

@@ -4,10 +4,13 @@ using System.Collections;
 public class GazeTank : MonoBehaviour {
 
 	bool isAnimating;
+	bool start = false;
+	bool looking = false;
 
 	//	public Transform projectile;
 	//	public float bulletSpeed = 20;
 
+	public GameObject player;
 
 
 	SplineController tankSpline;
@@ -57,6 +60,25 @@ public class GazeTank : MonoBehaviour {
 	}
 
 	void Update(){
+
+		float distance = Vector3.Distance (transform.position, player.transform.position);
+		if(looking && distance < 5.0f){
+			isAnimating = true;
+
+			if(!start){
+				foreach (Renderer r in Tank.GetComponentsInChildren<Renderer>()){
+					r.enabled = true;
+				}
+				Tank.GetComponent<SplineController>().FollowSpline ();
+
+				startTime = Time.time;
+				activateTimeBullet1_4 = Time.time + 3.0f;
+				activateTimeBullet5_8 = Time.time + 10.0f;
+				activateTimeBullet9_12 = Time.time + 23.0f;
+				activateTimeBullet13_20 = Time.time + 31.0f;
+				start = true;
+			}
+		}
 
 		if(isAnimating){
 			if(activateTimeBullet1_4 < Time.time){
@@ -137,6 +159,7 @@ public class GazeTank : MonoBehaviour {
 
 			if((startTime + 36.0f) < Time.time){
 				isAnimating = false;
+				start = false;
 				activeBullet1_4 = false;
 				activeBullet5_8 = false; 
 				activeBullet9_12 = false;
@@ -147,19 +170,14 @@ public class GazeTank : MonoBehaviour {
 
 	// Update is called once per frame
 	public void stareAtTankPaper() {
-		if(!isAnimating){
-			isAnimating = true;
-			foreach (Renderer r in Tank.GetComponentsInChildren<Renderer>()){
-				r.enabled = true;
-			}
-			Tank.GetComponent<SplineController>().FollowSpline ();
 
-			startTime = Time.time;
-			activateTimeBullet1_4 = Time.time + 3.0f;
-			activateTimeBullet5_8 = Time.time + 10.0f;
-			activateTimeBullet9_12 = Time.time + 23.0f;
-			activateTimeBullet13_20 = Time.time + 31.0f;
-		}
+		looking = true;
+
+	}
+
+	public void stopAtTankPaper() {
+
+		looking = false;
 	}
 }
 
