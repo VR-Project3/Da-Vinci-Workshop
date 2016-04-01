@@ -4,8 +4,8 @@ using System.Collections;
 public class RotateWheels : MonoBehaviour {
 
 	public float speed = 0f;
-	public float maxSpeed = 5.0f;
-	public float maxSpeedReverse = -5.0f;
+	public float maxSpeed = 4.0f;
+	public float maxSpeedReverse = -4.0f;
 	public float accel = .05f;
 	public float slowDown = .0075f;
 	float rotationSpeed;
@@ -73,7 +73,7 @@ public class RotateWheels : MonoBehaviour {
 		//			trunSpeed = 2f;
 		//		}
 
-		trunSpeed = (2 * Input.GetAxis ("Horizontal"));
+		trunSpeed = (3 * Input.GetAxis ("Horizontal"));
 
 		transform.Rotate(Vector3.up*trunSpeed*speed*Time.deltaTime);
 //		print (transform.eulerAngles.y);
