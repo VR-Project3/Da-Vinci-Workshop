@@ -4,7 +4,7 @@ using System.Collections;
 public class FlightController : MonoBehaviour 
 {
 
-	public float speed = 200f;
+	public float speed = 100f;
 	public float accel = 10f;
 	float rotationInt = 30f;
 	private bool land = false;
@@ -58,8 +58,8 @@ public class FlightController : MonoBehaviour
 
 		} else {
 			
-			transform.Rotate (rotat*Input.GetAxis ("PullUp"), 0, 0);
-			transform.Rotate (0, rotat*Input.GetAxis ("Turn"), 0);
+			transform.Rotate (-rotat*Input.GetAxis ("Vertical"), 0, 0);
+			transform.Rotate (0, rotat*Input.GetAxis ("Horizontal"), 0);
 
 			if (Input.GetButton ("LeftTrigger")) {
 				if (transform.eulerAngles.z > 45f) {
@@ -83,7 +83,7 @@ public class FlightController : MonoBehaviour
 			}
 
 
-			speed += accel * Input.GetAxis ("Vertical");
+			speed += accel * -Input.GetAxis ("PullUp");
 
 			if (speed > maxSpeed) {
 				speed = maxSpeed;
